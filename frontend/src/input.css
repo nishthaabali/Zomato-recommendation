@@ -1,0 +1,39 @@
+/* Compiled into ../assets/app.css (npm run build). Loaded inside the component's shadow root. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* The Stitch pages put these on <html>/<body>; a shadow root has neither, so the root div carries them.
+   Kept in @layer base so the body utilities on the root (font-body-md text-body-md …) win, as on <body>. */
+@layer base {
+  :host { display: block; }
+  .rr-root {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+    min-height: 100vh;
+  }
+  .rr-root ::-webkit-scrollbar { display: none; }
+}
+
+/* Google's Material Symbols class (the stylesheet is loaded on the document, which a shadow root can't see).
+   In @layer base so size utilities such as text-[13px] override it, as they do in the Stitch pages. */
+@layer base {
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+}

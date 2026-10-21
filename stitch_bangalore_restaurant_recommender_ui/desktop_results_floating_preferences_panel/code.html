@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en" style="width: 1280px; min-height: 100%; position: relative;"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;min-height:100%;}body{overscroll-behavior:none;background-color:#0e0e11;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#d98e00", "primary-fixed": "#ffdad8", "on-background": "#e4e1e6", "inverse-primary": "#bb162c", "surface-tint": "#ffb3b1", "surface-container": "#1f1f22", "primary-container": "#ff535a", "tertiary": "#4edea3", "inverse-surface": "#e4e1e6", "secondary-fixed": "#ffddb5", "on-tertiary-container": "#00311f", "secondary-fixed-dim": "#ffb957", "on-surface": "#e4e1e6", "on-primary-fixed-variant": "#92001c", "on-primary-fixed": "#410007", "tertiary-fixed-dim": "#4edea3", "surface-container-low": "#1b1b1e", "surface-bright": "#39393c", "on-surface-variant": "#e4bebc", "on-primary": "#680011", "on-tertiary-fixed": "#002113", "surface-container-highest": "#353438", "on-tertiary": "#003824", "tertiary-container": "#00a572", "on-primary-container": "#5b000e", "on-tertiary-fixed-variant": "#005236", "inverse-on-surface": "#303033", "outline-variant": "#5b403f", "on-secondary-container": "#4c2f00", "primary": "#ffb3b1", "error": "#ffb4ab", "on-error-container": "#ffdad6", "background": "#131316", "outline": "#ab8987", "surface-container-lowest": "#0e0e11", "surface-variant": "#353438", "on-secondary-fixed": "#2a1800", "surface-container-high": "#2a2a2d", "on-secondary-fixed-variant": "#643f00", "on-error": "#690005", "secondary": "#ffb957", "error-container": "#93000a", "on-secondary": "#462b00", "tertiary-fixed": "#6ffbbe", "surface": "#131316", "surface-dim": "#131316", "primary-fixed-dim": "#ffb3b1" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "gutter-sm": "1rem", "space-lg": "1.5rem", "margin-lg": "2.5rem", "margin-md": "1.5rem", "space-2xl": "3rem", "space-sm": "0.5rem", "margin": "1rem", "space-xl": "2rem", "gutter": "1.25rem", "gutter-lg": "1.5rem", "space-md": "1rem" }, "fontFamily": { "body-lg": [ "Inter" ], "headline-xl-mobile": [ "Plus Jakarta Sans" ], "caption": [ "Inter" ], "body-md": [ "Inter" ], "headline-lg": [ "Plus Jakarta Sans" ], "headline-xl": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Plus Jakarta Sans" ], "body-sm": [ "Inter" ], "headline-md": [ "Plus Jakarta Sans" ] }, "fontSize": { "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "headline-xl-mobile": [ "26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "caption": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-lg": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-xl": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" } ], "label-md": [ "13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-sm": [ "16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-md": [ "20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface-container-lowest font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 left-0 right-0 z-40 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-surface-container-high/60 shadow-[0_2px_12px_rgba(0,0,0,0.6)]"><div class="max-w-[1200px] mx-auto px-gutter h-16 flex items-center justify-between gap-space-md"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-primary-container to-primary flex items-center justify-center shadow-[0_0_12px_rgba(255,83,90,0.4)] shrink-0"><span class="material-symbols-outlined text-[20px] text-on-primary font-bold">restaurant</span></div><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Restaurant Recommender</span><span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-caption text-caption border border-surface-container-highest"><span class="material-symbols-outlined text-[13px] text-primary">location_on</span>Bengaluru, KA</span></div></div><div class="flex items-center gap-space-md"><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm border border-tertiary/20"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>Zomato AI Active</div><button class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-primary font-label-sm text-label-sm transition-colors border border-surface-container-highest" type="button"><span class="material-symbols-outlined text-[16px]">restart_alt</span>Reset</button></div></div></header><main class="w-full pt-16 flex-1 bg-surface-container-lowest"><div class="max-w-[1200px] mx-auto px-gutter py-space-md"><div class="flex flex-col w-full">
+<!-- SECTION HEADER & FILTERS SUMMARY -->
+<div class="flex flex-col gap-space-sm mb-space-md">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm pb-space-xs">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-caption text-caption uppercase tracking-wider text-primary font-semibold">BANGALORE DINING INTELLIGENCE</span>
+<span class="text-outline-variant">·</span>
+<span class="font-caption text-caption text-on-surface-variant">Live Ranking</span>
+</div>
+<div class="flex items-center gap-space-md flex-wrap">
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">Your recommendations</h1>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm shadow-sm border border-primary/20">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+            5 curated spots
+          </span>
+</div>
+</div>
+<button class="inline-flex items-center gap-1.5 self-start sm:self-auto px-space-md py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high hover:text-primary transition-all duration-200 font-label-md text-label-md border border-surface-container-highest shadow-sm active:scale-95" id="openPreferencesBtn" type="button">
+<span class="material-symbols-outlined text-[17px] text-primary">tune</span>
+        Edit Preferences
+      </button>
+</div>
+<!-- Active Filter Chips Row -->
+<div class="flex items-center justify-between gap-3 flex-wrap bg-surface-container-low p-2.5 rounded-xl border border-surface-container-high/60">
+<div class="flex items-center gap-2 flex-wrap">
+<!-- Location chip -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors border border-surface-container-highest" id="filterLocationChip">
+<span class="material-symbols-outlined text-[15px] text-primary">location_on</span>
+<span id="locationChipText">Indiranagar, 100ft Rd</span>
+<span class="text-[10px] text-on-surface-variant">▾</span>
+</button>
+<!-- Budget chip (highlighted crimson active) -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary-container/25 text-primary border border-primary-container/60 font-label-sm text-label-sm shadow-[0_0_10px_rgba(255,83,90,0.25)]" id="filterBudgetChip">
+<span class="material-symbols-outlined text-[15px] text-primary">payments</span>
+<span class="font-semibold" id="budgetChipText">Budget: ₹500–₹1,000</span>
+<span class="text-[10px] text-primary">▾</span>
+</button>
+<!-- Cuisine chip -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors border border-surface-container-highest" id="filterCuisineChip">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">restaurant_menu</span>
+<span id="cuisineChipText">Cuisine: Any Cuisine</span>
+<span class="text-[10px] text-on-surface-variant">▾</span>
+</button>
+<!-- Rating chip -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors border border-surface-container-highest" id="filterRatingChip">
+<span class="material-symbols-outlined text-[15px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span id="ratingChipText">3.5+ Rating</span>
+<span class="text-[10px] text-on-surface-variant">▾</span>
+</button>
+<!-- Ambience active tag -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-tertiary-container/20 text-tertiary border border-tertiary/30 font-label-sm text-label-sm" id="ambienceTagWrapper">
+<span class="material-symbols-outlined text-[15px]">check</span>
+<span id="ambienceChipText">Date night &amp; outdoor seating</span>
+<button class="ml-0.5 hover:text-on-surface text-tertiary/70 font-bold" id="removeAmbienceBtn">✕</button>
+</div>
+<!-- Quick suggestions -->
+<div class="h-4 w-px bg-surface-container-highest mx-0.5 hidden lg:block"></div>
+<button class="inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container/60 hover:bg-surface-container text-on-surface-variant hover:text-on-surface text-caption font-caption transition-colors border border-dashed border-outline-variant/60">
++ Quick bite
+</button>
+<button class="inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container/60 hover:bg-surface-container text-on-surface-variant hover:text-on-surface text-caption font-caption transition-colors border border-dashed border-outline-variant/60">
++ Rooftop brew
+</button>
+<button class="inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container/60 hover:bg-surface-container text-on-surface-variant hover:text-on-surface text-caption font-caption transition-colors border border-dashed border-outline-variant/60">
++ Family-friendly
+</button>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="text-caption font-caption text-on-surface-variant hover:text-on-surface px-2 py-1 transition-colors">Clear All</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-fixed font-label-sm text-label-sm font-semibold transition-colors shadow-sm">Apply Filters</button>
+</div>
+</div>
+</div>
+<!-- GREEN AI SUMMARY BANNER -->
+<div class="relative overflow-hidden rounded-xl bg-tertiary-container/10 border border-tertiary/20 p-space-md mb-space-md shadow-md">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary"></div>
+<div class="flex items-start gap-space-md pl-1.5">
+<div class="w-9 h-9 rounded-lg bg-tertiary-container/30 border border-tertiary/30 flex items-center justify-center shrink-0 text-tertiary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-tertiary font-semibold">AI Dining Insight</span>
+<span class="text-tertiary/60">·</span>
+<span class="font-caption text-caption px-2 py-0.5 rounded-full bg-tertiary/15 text-tertiary font-semibold">Bangalore Engine v3.4</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+          Based on <strong class="text-on-surface font-semibold">12,000+ verified Bangalore Zomato reviews</strong>, these 5 spots in Indiranagar excel in vibrant ambiance, consistent service, and romantic outdoor seating within your ₹500–1000 budget.
+        </p>
+</div>
+</div>
+</div>
+<!-- RANKED RESTAURANT CARDS -->
+<div class="flex flex-col gap-space-md" id="cardsContainer">
+<!-- CARD #1: TOP PICK -->
+<article class="relative group rounded-xl bg-surface-container-low border border-primary-container/40 p-space-lg transition-all duration-300 hover:bg-surface-container shadow-[0_4px_24px_rgba(255,83,90,0.15)]"><div class="absolute inset-x-0 -top-px h-1 rounded-t-xl bg-gradient-to-r from-transparent via-primary-container to-transparent opacity-90"></div><div class="flex flex-col md:flex-row gap-space-md items-start"><div class="w-full md:w-56 h-40 md:h-48 rounded-lg overflow-hidden shrink-0 relative bg-surface-container-high"><img class="w-full h-full object-cover" data-alt="Intimate rooftop balcony at Toit Brewpub Bangalore at twilight with warm string lights glowing overhead, artisan wood-fired pizza on a rustic table, craft beer glasses with golden liquid, patrons chatting in the background, elegant nocturnal Bangalore dining aesthetic with crimson and amber ambient light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCqEFotdPQm6X4-WpmsHzv_YUIVle2QV6r6Pz9mXWf1FVfv--nFzPdPDGPfWJ-Lc0iqC3mDl9jA9sJrzCPpO1xe6tFaczN072LTAgKe1z2UDPd34KnAZdryjue3sl1lZ8eT_nyRA2nFL2Uk5joWp3gqvvt0wEtylfBDT4fYz2u8Uqag698VI6f-AdBKLjP-RdJht8ogUKBxKWFrCurvAd1siVnYQ_1l8YdXqGv63oyvt63xpWLx2vY"/><div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div><span class="absolute bottom-2 left-2.5 font-caption text-caption text-on-surface flex items-center gap-1 bg-surface-container-lowest/70 backdrop-blur-sm px-2 py-0.5 rounded-full"><span class="material-symbols-outlined text-[12px] text-tertiary">check_circle</span>Verified Photos</span></div><div class="flex flex-col gap-2.5 flex-1 w-full"><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2"><div class="flex items-center gap-space-md"><div class="flex flex-col items-center justify-center w-11 h-11 rounded-xl bg-primary-container/25 text-primary border border-primary-container/50 shrink-0 shadow-[0_0_12px_rgba(255,83,90,0.35)]"><span class="font-headline-md text-headline-md font-bold leading-none">#1</span><span class="font-caption text-[9px] tracking-tight text-primary-fixed uppercase font-semibold">Rank</span></div><div><div class="flex items-center gap-2 flex-wrap"><h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Toit Brewpub &amp; Eatery</h2><span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-container/20 text-primary border border-primary-container/40 font-label-sm text-label-sm shadow-[0_0_8px_rgba(255,83,90,0.2)]"><span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">star</span>#1 TOP PICK</span></div><div class="flex items-center gap-1.5 flex-wrap font-label-sm text-label-sm text-on-surface-variant mt-1"><span class="text-on-surface font-medium">Indiranagar</span><span class="text-outline-variant">·</span><span class="">Microbrewery</span><span class="text-outline-variant">·</span><span class="">Casual Dining</span><span class="text-outline-variant">·</span><span class="text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">deck</span>Outdoor Balcony</span><span class="text-outline-variant">·</span><span class="text-tertiary font-semibold">₹950 for two</span></div></div></div><div class="flex items-center gap-2 self-start sm:self-auto"><button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1.5 border border-surface-container-highest" type="button"><span class="material-symbols-outlined text-[16px]">bookmark_border</span>Save to Shortlist</button><button class="px-space-md py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-fixed font-label-sm text-label-sm font-semibold transition-all duration-200 flex items-center gap-1.5 shadow-[0_0_12px_rgba(226,55,68,0.35)]" type="button"><span class="">View Zomato Menu</span><span class="material-symbols-outlined text-[16px]">arrow_outward</span></button></div></div><div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 p-2.5 rounded-lg bg-surface-container/70 border border-surface-container-highest"><div class="flex flex-col gap-0.5"><span class="font-caption text-caption text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">restaurant</span>Cuisine</span><span class="font-label-md text-label-md text-on-surface truncate">Craft Beer, Italian, Finger Food</span></div><div class="flex flex-col gap-0.5"><span class="font-caption text-caption text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-secondary">star</span>Rating &amp; Buzz</span><div class="flex items-baseline gap-1.5"><span class="font-headline-sm text-headline-sm font-bold text-on-surface">4.6</span><span class="material-symbols-outlined text-[13px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-caption text-caption text-on-surface-variant">(28,450 Zomato votes)</span></div></div><div class="flex flex-col gap-0.5"><span class="font-caption text-caption text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">wallet</span>Estimated Cost</span><span class="font-label-md text-label-md text-tertiary font-semibold">₹950 for two</span></div></div><div class="flex items-start gap-space-sm bg-surface-container-high/40 border border-surface-container-high p-2.5 rounded-lg"><span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">auto_awesome</span><div class="flex flex-col gap-0.5"><span class="font-label-sm text-label-sm text-secondary font-semibold">Why this fits your date night:</span><p class="font-body-sm text-body-sm text-on-surface">Ranked #1 for couples seeking energetic ambiance with wood-fired pizzas and craft brews. Over 85% of reviews highlight the lively rooftop balcony, fitting your date night preference comfortably within ₹1000.</p></div></div><div class="flex items-center justify-between text-caption font-caption text-on-surface-variant pt-0.5"><span class="flex items-center gap-1.5 text-tertiary font-medium"><span class="material-symbols-outlined text-[14px]">check_circle</span>High date-satisfaction score (96%)</span><span class="text-on-surface-variant">Trending #1 in Indiranagar nightlife</span></div></div></div></article>
+<!-- CARD #2: MILANO ICE CREAM & CAFE -->
+<article class="relative group rounded-xl bg-surface-container-low border border-surface-container-high/60 p-space-lg transition-all duration-300 hover:bg-surface-container hover:shadow-xl shadow-md"><div class="flex flex-col md:flex-row gap-space-md items-start"><div class="w-full md:w-56 h-40 md:h-48 rounded-lg overflow-hidden shrink-0 relative bg-surface-container-high"><img class="w-full h-full object-cover" data-alt="Artisanal Italian gelato in delicate waffle cones at Milano Cafe Bangalore, cozy outdoor garden patio at night lit by warm yellow fairy lights, lush green plants framing romantic wooden bench seating, moody modern dark aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYhCg8q2CmDA4e0KULVHB1t5W1gZ3KH9IrpiUg-Jgvb3BycBzumGVwAhJcAXY8su4_OthUdpDIpCHxGBiokPpKJ9lo195qRsDt45zTHUe9bfF9GXFtBioa1SNahVrEOPS9Iow8YnuosFqDEjLOUPP0MFJT0PF2Sl1GfOfgO64TNpLw47LxF9oZf4KckqJ-RD7Ujz2GFYKBk0nSc1ZwpXLiXFsrNxw3TdRXSzibPUTkeQJ_KFVLR6BI"/><div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div><span class="absolute bottom-2 left-2.5 font-caption text-caption text-on-surface flex items-center gap-1 bg-surface-container-lowest/70 backdrop-blur-sm px-2 py-0.5 rounded-full"><span class="material-symbols-outlined text-[12px] text-tertiary">check_circle</span>Garden Patio</span></div><div class="flex flex-col gap-2.5 flex-1 w-full"><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2"><div class="flex items-center gap-space-md"><div class="flex flex-col items-center justify-center w-11 h-11 rounded-xl bg-surface-container-high text-on-surface border border-surface-container-highest shrink-0"><span class="font-headline-md text-headline-md font-bold leading-none">#2</span><span class="font-caption text-[9px] tracking-tight text-on-surface-variant uppercase font-semibold">Rank</span></div><div><div class="flex items-center gap-2 flex-wrap"><h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Milano Ice Cream &amp; Cafe</h2><span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-tertiary border border-tertiary/30 font-label-sm text-label-sm">Best Value Date</span></div><div class="flex items-center gap-1.5 flex-wrap font-label-sm text-label-sm text-on-surface-variant mt-1"><span class="text-on-surface font-medium">Indiranagar</span><span class="text-outline-variant">·</span><span class="">Artisanal Gelato &amp; Desserts</span><span class="text-outline-variant">·</span><span class="text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">yard</span>Cozy Date Spot</span><span class="text-outline-variant">·</span><span class="text-tertiary font-semibold">₹600 for two</span></div></div></div><div class="flex items-center gap-2 self-start sm:self-auto"><button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1.5 border border-surface-container-highest" type="button"><span class="material-symbols-outlined text-[16px]">bookmark_border</span>Save to Shortlist</button><button class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1.5 border border-surface-container-highest" type="button"><span class="">View Details</span><span class="material-symbols-outlined text-[16px]">arrow_outward</span></button></div></div><div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 p-2.5 rounded-lg bg-surface-container/70 border border-surface-container-highest"><div class="flex flex-col gap-0.5"><span class="font-caption text-caption text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">restaurant</span>Cuisine</span><span class="font-label-md text-label-md text-on-surface truncate">Italian Desserts, Bakery, Coffee</span></div><div class="flex flex-col gap-0.5"><span class="font-caption text-caption text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-secondary">star</span>Rating &amp; Buzz</span><div class="flex items-baseline gap-1.5"><span class="font-headline-sm text-headline-sm font-bold text-on-surface">4.7</span><span class="material-symbols-outlined text-[13px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-caption text-caption text-on-surface-variant">(9,120 Zomato votes)</span></div></div><div class="flex flex-col gap-0.5"><span class="font-caption text-caption text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">wallet</span>Estimated Cost</span><span class="font-label-md text-label-md text-tertiary font-semibold">₹600 for two</span></div></div><div class="flex items-start gap-space-sm bg-surface-container-high/40 border border-surface-container-high p-2.5 rounded-lg"><span class="material-symbols-outlined text-[18px] text-tertiary shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">auto_awesome</span><div class="flex flex-col gap-0.5"><span class="font-label-sm text-label-sm text-tertiary font-semibold">Why this fits you:</span><p class="font-body-sm text-body-sm text-on-surface">Quintessential casual date destination. Unmatched artisanal gelato and cozy fairy-lit garden seating that stays well under budget with prompt service.</p></div></div><div class="flex items-center justify-between text-caption font-caption text-on-surface-variant pt-0.5"><span class="flex items-center gap-1 text-secondary"><span class="material-symbols-outlined text-[14px]">bolt</span>Peak hours: 8:30 PM – 10:30 PM</span><span class="">Fastest seating outdoor tables</span></div></div></div></article>
+<!-- CARD #3: BRIK OVEN -->
+<article class="relative group rounded-xl bg-surface-container-low border border-surface-container-high/60 p-space-lg transition-all duration-300 hover:bg-surface-container hover:shadow-xl shadow-md"><div class="flex flex-col md:flex-row gap-space-md items-start"><div class="w-full md:w-56 h-40 md:h-48 rounded-lg overflow-hidden shrink-0 relative bg-surface-container-high"><img class="w-full h-full object-cover" data-alt="Gourmet sourdough Neapolitan pizza straight from glowing wood-fired brick oven at Brik Oven Bangalore, bubbling cheese with fresh basil, chic alfresco veranda terrace in Indiranagar, intimate candle on table, nighttime dining atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7CMd_XXAaze3Mmtqci8RhF633ssxfvq3epD0D8avvhPK7NQylZHyLHF8ReKeYvK4oqV2RngIKxHbVNBub5fuTJcsGodYfjRzcRV431lTPUQRDxBjxj0qqQ_W--hWC_SPa1AzUCmfgMCNq1CneLaWnhsxrI9Xc1KKr3FORW6hMHwWfmx9IPCM3FD6KvPiCFFphrtlgCUw4vNUyOHaEziDF8l9F7zkZOu4JhqZoLnfPEe_b1Wku6q1N"/><div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div><span class="absolute bottom-2 left-2.5 font-caption text-caption text-on-surface flex items-center gap-1 bg-surface-container-lowest/70 backdrop-blur-sm px-2 py-0.5 rounded-full"><span class="material-symbols-outlined text-[12px] text-tertiary">check_circle</span>Alfresco Deck</span></div><div class="flex flex-col gap-2.5 flex-1 w-full"><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2"><div class="flex items-center gap-space-md"><div class="flex flex-col items-center justify-center w-11 h-11 rounded-xl bg-surface-container-high text-on-surface border border-surface-container-highest shrink-0"><span class="font-headline-md text-headline-md font-bold leading-none">#3</span><span class="font-caption text-[9px] tracking-tight text-on-surface-variant uppercase font-semibold">Rank</span></div><div><div class="flex items-center gap-2 flex-wrap"><h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Brik Oven</h2><span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-secondary border border-secondary/30 font-label-sm text-label-sm">Wood-fired Specialist</span></div><div class="flex items-center gap-1.5 flex-wrap font-label-sm text-label-sm text-on-surface-variant mt-1"><span class="text-on-surface font-medium">Indiranagar 100ft Rd</span><span class="text-outline-variant">·</span><span class="">Sourdough Pizza</span><span class="text-outline-variant">·</span><span class="text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">table_bar</span>Alfresco</span><span class="text-outline-variant">·</span><span class="text-tertiary font-semibold">₹850 for two</span></div></div></div><div class="flex items-center gap-2 self-start sm:self-auto"><button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1.5 border border-surface-container-highest" type="button"><span class="material-symbols-outlined text-[16px]">bookmark_border</span>Save to Shortlist</button><button class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1.5 border border-surface-container-highest" type="button"><span class="">View Details</span><span class="material-symbols-outlined text-[16px]">arrow_outward</span></button></div></div><div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 p-2.5 rounded-lg bg-surface-container/70 border border-surface-container-highest"><div class="flex flex-col gap-0.5"><span class="font-caption text-caption text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">restaurant</span>Cuisine</span><span class="font-label-md text-label-md text-on-surface truncate">Neapolitan Pizza, Shakes, Salads</span></div><div class="flex flex-col gap-0.5"><span class="font-caption text-caption text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-secondary">star</span>Rating &amp; Buzz</span><div class="flex items-baseline gap-1.5"><span class="font-headline-sm text-headline-sm font-bold text-on-surface">4.5</span><span class="material-symbols-outlined text-[13px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-caption text-caption text-on-surface-variant">(7,840 Zomato votes)</span></div></div><div class="flex flex-col gap-0.5"><span class="font-caption text-caption text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">wallet</span>Estimated Cost</span><span class="font-label-md text-label-md text-tertiary font-semibold">₹850 for two</span></div></div><div class="flex items-start gap-space-sm bg-surface-container-high/40 border border-surface-container-high p-2.5 rounded-lg"><span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">auto_awesome</span><div class="flex flex-col gap-0.5"><span class="font-label-sm text-label-sm text-secondary font-semibold">Why this fits you:</span><p class="font-body-sm text-body-sm text-on-surface">Renowned for authentic sourdough crusts baked in wood-fired ovens. Cozy outdoor patio ideal for conversation.</p></div></div><div class="flex items-center justify-between text-caption font-caption text-on-surface-variant pt-0.5"><span class="flex items-center gap-1 text-tertiary font-medium"><span class="material-symbols-outlined text-[14px]">local_pizza</span>Known for: The Big Cheese &amp; Truffle fries</span><span class="">Outdoor high-top &amp; veranda seating</span></div></div></div></article>
+<!-- CARD #4: SMOKE HOUSE DELI -->
+<article class="relative group rounded-xl bg-surface-container-low border border-surface-container-high/60 p-space-lg transition-all duration-300 hover:bg-surface-container hover:shadow-xl shadow-md"><div class="flex flex-col md:flex-row gap-space-md items-start"><div class="w-full md:w-56 h-40 md:h-48 rounded-lg overflow-hidden shrink-0 relative bg-surface-container-high"><img class="w-full h-full object-cover" data-alt="Intimate candlelit European dining interior at Smoke House Deli Bangalore, black and white hand-drawn whimsical illustrated wall murals, couple dining at elegant table with pasta and mocktails, stylish moody bistro atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBks9yhcU2YAU33PxumGz9cY1ELlNrAc-0cDM6i7gjiK4xeLYE9EMpI52acxPB_c-b1bI2Q59507lEtCb3y9UMnq8pyYDFzo8aaj_ap7kUnyahpx0bYcoL95ln0I9uSWflMLNihbbVqa0ZwTkdkUWDdWdkxfMpNi-PWfSuVsT3MZSgZ78PNgXrxAuTjw1z42yJWZW4YtF4D4v29WTZnpp8deCDg-gx-75QNxOemRfiawMZlkOJHSgv2"/><div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div><span class="absolute bottom-2 left-2.5 font-caption text-caption text-on-surface flex items-center gap-1 bg-surface-container-lowest/70 backdrop-blur-sm px-2 py-0.5 rounded-full"><span class="material-symbols-outlined text-[12px] text-tertiary">check_circle</span>Intimate Booths</span></div><div class="flex flex-col gap-2.5 flex-1 w-full"><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2"><div class="flex items-center gap-space-md"><div class="flex flex-col items-center justify-center w-11 h-11 rounded-xl bg-surface-container-high text-on-surface border border-surface-container-highest shrink-0"><span class="font-headline-md text-headline-md font-bold leading-none">#4</span><span class="font-caption text-[9px] tracking-tight text-on-surface-variant uppercase font-semibold">Rank</span></div><div><div class="flex items-center gap-2 flex-wrap"><h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Smoke House Deli</h2><span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant border border-surface-container-highest font-label-sm text-label-sm">Hand-drawn Art Decor</span></div><div class="flex items-center gap-1.5 flex-wrap font-label-sm text-label-sm text-on-surface-variant mt-1"><span class="text-on-surface font-medium">Indiranagar 12th Main</span><span class="text-outline-variant">·</span><span class="">European &amp; Deli</span><span class="text-outline-variant">·</span><span class="text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">wb_twilight</span>Candlelit Seating</span><span class="text-outline-variant">·</span><span class="text-tertiary font-semibold">₹980 for two</span></div></div></div><div class="flex items-center gap-2 self-start sm:self-auto"><button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1.5 border border-surface-container-highest" type="button"><span class="material-symbols-outlined text-[16px]">bookmark_border</span>Save to Shortlist</button><button class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1.5 border border-surface-container-highest" type="button"><span class="">View Details</span><span class="material-symbols-outlined text-[16px]">arrow_outward</span></button></div></div><div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 p-2.5 rounded-lg bg-surface-container/70 border border-surface-container-highest"><div class="flex flex-col gap-0.5"><span class="font-caption text-caption text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">restaurant</span>Cuisine</span><span class="font-label-md text-label-md text-on-surface truncate">European, Continental</span></div><div class="flex flex-col gap-0.5"><span class="font-caption text-caption text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-secondary">star</span>Rating &amp; Buzz</span><div class="flex items-baseline gap-1.5"><span class="font-headline-sm text-headline-sm font-bold text-on-surface">4.4</span><span class="material-symbols-outlined text-[13px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-caption text-caption text-on-surface-variant">(6,200 Zomato votes)</span></div></div><div class="flex flex-col gap-0.5"><span class="font-caption text-caption text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">wallet</span>Estimated Cost</span><span class="font-label-md text-label-md text-tertiary font-semibold">₹980 for two</span></div></div><div class="flex items-start gap-space-sm bg-surface-container-high/40 border border-surface-container-high p-2.5 rounded-lg"><span class="material-symbols-outlined text-[18px] text-primary-fixed shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">auto_awesome</span><div class="flex flex-col gap-0.5"><span class="font-label-sm text-label-sm text-primary-fixed font-semibold">Why this fits you:</span><p class="font-body-sm text-body-sm text-on-surface">Charming hand-drawn wall art and intimate candlelit booths make it a top-rated date choice.</p></div></div><div class="flex items-center justify-between text-caption font-caption text-on-surface-variant pt-0.5"><span class="flex items-center gap-1 text-tertiary font-medium"><span class="material-symbols-outlined text-[14px]">celebration</span>Great for anniversaries &amp; quiet conversations</span><span class="">Subtle ambient jazz music</span></div></div></div></article>
+<!-- CARD #5: GLEN'S BAKEHOUSE -->
+<article class="relative group rounded-xl bg-surface-container-low border border-surface-container-high/60 p-space-lg transition-all duration-300 hover:bg-surface-container hover:shadow-xl shadow-md"><div class="flex flex-col md:flex-row gap-space-md items-start"><div class="w-full md:w-56 h-40 md:h-48 rounded-lg overflow-hidden shrink-0 relative bg-surface-container-high"><img class="w-full h-full object-cover" data-alt="Vintage colonial bungalow patio with quaint wooden tables under Bangalore canopy trees at Glen's Bakehouse, red velvet cupcakes on glass stands, warm ambient string lights casting a cozy romantic evening glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRQ4brVfIEghBKFKw_suwb-56u2fX-U2kcThbjf-rRb8Nd9ANG3_6NY9K5nE7CGJXgjNxhesLee0p_iwuvu3nFZrHYhHxARuLXbjAxG_n992ijqP2Wa_9VuXXrioREoqnw2dKZ-Ol0yZy9jloJatb914SsXxkBMVZDWEzlN8KFmirUdD30sMhb2IxAlF9N7VPCk3RLm3Q6PZHirxx2V_wA9TTso0TMfQ0Te288x8Nd4I8qHme0-zpz"/><div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div><span class="absolute bottom-2 left-2.5 font-caption text-caption text-on-surface flex items-center gap-1 bg-surface-container-lowest/70 backdrop-blur-sm px-2 py-0.5 rounded-full"><span class="material-symbols-outlined text-[12px] text-tertiary">check_circle</span>Open Courtyard</span></div><div class="flex flex-col gap-2.5 flex-1 w-full"><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2"><div class="flex items-center gap-space-md"><div class="flex flex-col items-center justify-center w-11 h-11 rounded-xl bg-surface-container-high text-on-surface border border-surface-container-highest shrink-0"><span class="font-headline-md text-headline-md font-bold leading-none">#5</span><span class="font-caption text-[9px] tracking-tight text-on-surface-variant uppercase font-semibold">Rank</span></div><div><div class="flex items-center gap-2 flex-wrap"><h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Glen's Bakehouse</h2><span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-secondary border border-secondary/30 font-label-sm text-label-sm">Heritage Ambiance</span></div><div class="flex items-center gap-1.5 flex-wrap font-label-sm text-label-sm text-on-surface-variant mt-1"><span class="text-on-surface font-medium">Indiranagar Lavelle Cross</span><span class="text-outline-variant">·</span><span class="">Cafe &amp; Bakery</span><span class="text-outline-variant">·</span><span class="text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">park</span>Colonial Courtyard</span><span class="text-outline-variant">·</span><span class="text-tertiary font-semibold">₹700 for two</span></div></div></div><div class="flex items-center gap-2 self-start sm:self-auto"><button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1.5 border border-surface-container-highest" type="button"><span class="material-symbols-outlined text-[16px]">bookmark_border</span>Save to Shortlist</button><button class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1.5 border border-surface-container-highest" type="button"><span class="">View Details</span><span class="material-symbols-outlined text-[16px]">arrow_outward</span></button></div></div><div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 p-2.5 rounded-lg bg-surface-container/70 border border-surface-container-highest"><div class="flex flex-col gap-0.5"><span class="font-caption text-caption text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">restaurant</span>Cuisine</span><span class="font-label-md text-label-md text-on-surface truncate">Cafe, Bakery, Italian</span></div><div class="flex flex-col gap-0.5"><span class="font-caption text-caption text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-secondary">star</span>Rating &amp; Buzz</span><div class="flex items-baseline gap-1.5"><span class="font-headline-sm text-headline-sm font-bold text-on-surface">4.3</span><span class="material-symbols-outlined text-[13px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-caption text-caption text-on-surface-variant">(14,300 Zomato votes)</span></div></div><div class="flex flex-col gap-0.5"><span class="font-caption text-caption text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">wallet</span>Estimated Cost</span><span class="font-label-md text-label-md text-tertiary font-semibold">₹700 for two</span></div></div><div class="flex items-start gap-space-sm bg-surface-container-high/40 border border-surface-container-high p-2.5 rounded-lg"><span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">auto_awesome</span><div class="flex flex-col gap-0.5"><span class="font-label-sm text-label-sm text-secondary font-semibold">Why this fits you:</span><p class="font-body-sm text-body-sm text-on-surface">Quaint colonial bungalow setting with outdoor courtyard seating and famous red velvet cupcakes.</p></div></div><div class="flex items-center justify-between text-caption font-caption text-on-surface-variant pt-0.5"><span class="flex items-center gap-1 text-tertiary font-medium"><span class="material-symbols-outlined text-[14px]">bakery_dining</span>Highlight: Signature Red Velvet Cupcakes</span><span class="">Garden veranda seating available</span></div></div></div></article>
+</div>
+<!-- BOTTOM REFINEMENT PROMPT & FOOTNOTE -->
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container-low border border-surface-container-high/60 flex flex-col sm:flex-row items-center justify-between gap-space-md shadow-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center shrink-0 border border-primary/30">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Need more precision?</span>
+<p class="font-caption text-caption text-on-surface-variant">Adjust dietary restrictions, craft beer taps, or valet parking availability.</p>
+</div>
+</div>
+<div class="flex items-center gap-2 w-full sm:w-auto">
+<button class="w-full sm:w-auto px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-1.5 border border-surface-container-highest" type="button">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+        Shuffle Picks
+      </button>
+<button class="w-full sm:w-auto px-space-md py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-fixed font-label-md text-label-md font-semibold transition-all shadow-[0_0_12px_rgba(226,55,68,0.35)] flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">share</span>
+        Share Shortlist
+      </button>
+</div>
+</div>
+<div class="my-space-md flex items-center justify-center gap-2 text-center">
+<span class="material-symbols-outlined text-[15px] text-tertiary">check_circle</span>
+<span class="font-caption text-caption text-on-surface-variant">All rankings verified via real-time Zomato Bangalore restaurant catalog datasets.</span>
+</div>
+</div></div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-high/60 py-space-md"><div class="max-w-[1200px] mx-auto px-gutter flex flex-col sm:flex-row items-center justify-between gap-space-sm text-center sm:text-left"><p class="font-caption text-caption text-on-surface-variant">Data: Zomato restaurant dataset · Powered by AI · Built for food lovers in Bangalore</p><div class="flex items-center gap-space-md"><a class="font-caption text-caption text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy</a><span class="text-outline-variant text-[10px]">·</span><span class="text-outline-variant text-[10px]">·</span></div></div></footer>
+<!-- FLOATING PREFERENCES MODAL OVERLAY (hidden by default) -->
+<div class="fixed inset-0 bg-black/75 backdrop-blur-sm z-50 hidden items-center justify-center p-4 sm:p-6 overflow-y-auto transition-opacity duration-200" id="preferencesModalOverlay">
+<div class="relative w-full max-w-2xl bg-[#17171C] border border-[#2A2A32] rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] my-auto transition-all transform duration-200" id="modalDialogCard">
+<!-- Fixed Modal Header -->
+<div class="px-6 py-5 border-b border-[#2A2A32] flex items-center justify-between gap-4 bg-[#17171C] shrink-0">
+<div>
+<h2 class="font-bold text-xl text-[#F4F4F6] tracking-tight font-headline-md">Edit Preferences</h2>
+<p class="text-xs text-[#A1A1AA] mt-0.5">Adjust your criteria to update recommendations in real-time</p>
+</div>
+<button aria-label="Close modal" class="text-[#A1A1AA] hover:text-[#F4F4F6] hover:bg-[#2A2A32] p-2 rounded-lg transition-colors flex items-center justify-center" id="closeModalBtn" type="button">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<!-- Scrollable Modal Body -->
+<div class="overflow-y-auto p-6 space-y-6 flex-1 text-on-surface">
+<!-- Section 1: Location & Budget -->
+<div class="space-y-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">pin_drop</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Location &amp; Budget</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-[#1F1F26] p-4 rounded-xl border border-[#2A2A32]">
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1.5" for="modalLocationSelect">
+<span class="material-symbols-outlined text-[16px] text-primary">near_me</span>Location in Bangalore
+              </label>
+<span class="font-caption text-caption text-on-surface-variant">40+ food hubs</span>
+</div>
+<div class="relative">
+<select class="w-full h-11 bg-[#17171C] rounded-lg px-3 pr-8 text-sm text-on-surface border border-[#2A2A32] shadow-sm hover:border-primary/50 focus:border-primary outline-none transition-colors appearance-none cursor-pointer" id="modalLocationSelect">
+<option selected="" value="Indiranagar, 100ft Rd">Indiranagar, 100ft Road</option>
+<option value="Koramangala, 5th Block">Koramangala, 5th Block</option>
+<option value="Lavelle Road">Lavelle Road &amp; UB City</option>
+<option value="HSR Layout, Sector 4">HSR Layout, Sector 4</option>
+<option value="Whitefield, ITPL Main Rd">Whitefield, ITPL Main Rd</option>
+<option value="Church Street &amp; MG Rd">Church Street &amp; MG Rd</option>
+</select>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] pointer-events-none absolute right-3 top-3">expand_more</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant flex items-center gap-1 pt-1">
+<span class="material-symbols-outlined text-[13px] text-tertiary">bolt</span>Instant radius lookup covers micro-pubs, bistros, and iconic messes.
+            </p>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">payments</span>Budget for Two
+              </label>
+<span class="font-caption text-caption px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary border border-secondary/30" id="activeBudgetBadge">₹500 - ₹1,000</span>
+</div>
+<div class="grid grid-cols-3 gap-1.5 bg-[#17171C] p-1 rounded-xl h-11 border border-[#2A2A32]" id="budgetButtonGroup">
+<button class="budget-btn py-1 px-1.5 rounded-lg text-center flex flex-col items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-[#2A2A32] transition-all" data-budget="Low &lt; ₹500" data-label="Budget: &lt;₹500" type="button">
+<span class="font-label-sm text-[11px] font-semibold leading-tight">Low</span>
+<span class="text-[10px] text-on-surface-variant leading-none">&lt; ₹500</span>
+</button>
+<button class="budget-btn py-1 px-1.5 rounded-lg text-center flex flex-col items-center justify-center bg-[#E23744] text-white shadow-[0_0_12px_rgba(226,55,68,0.4)] transition-all" data-budget="Medium ₹500 - ₹1,000" data-label="Budget: ₹500–₹1,000" type="button">
+<div class="flex items-center gap-1"><span class="font-label-sm text-[11px] font-semibold leading-tight">Medium</span><span class="material-symbols-outlined text-[12px]">check</span></div>
+<span class="text-[10px] text-white/90 leading-none">₹500 - ₹1,000</span>
+</button>
+<button class="budget-btn py-1 px-1.5 rounded-lg text-center flex flex-col items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-[#2A2A32] transition-all" data-budget="High ₹1,000+" data-label="Budget: ₹1,000+" type="button">
+<span class="font-label-sm text-[11px] font-semibold leading-tight">High</span>
+<span class="text-[10px] text-on-surface-variant leading-none">₹1,000+</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 2: Cuisine Profile -->
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">ramen_dining</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Cuisine Profile</h3>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Multi-select ready</span>
+</div>
+<div class="bg-[#1F1F26] p-4 rounded-xl border border-[#2A2A32]">
+<div class="flex flex-wrap gap-2" id="cuisineTagsGroup">
+<button class="cuisine-pill px-3.5 py-1.5 rounded-full font-label-sm text-label-sm transition-all bg-[#E23744] text-white shadow-[0_0_10px_rgba(226,55,68,0.35)]" data-cuisine="Any Cuisine" type="button">Any Cuisine</button>
+<button class="cuisine-pill px-3.5 py-1.5 rounded-full font-label-sm text-label-sm transition-all bg-[#17171C] text-on-surface-variant hover:text-on-surface border border-[#2A2A32] hover:bg-[#2A2A32]" data-cuisine="South Indian" type="button">South Indian</button>
+<button class="cuisine-pill px-3.5 py-1.5 rounded-full font-label-sm text-label-sm transition-all bg-[#17171C] text-on-surface-variant hover:text-on-surface border border-[#2A2A32] hover:bg-[#2A2A32]" data-cuisine="North Indian" type="button">North Indian</button>
+<button class="cuisine-pill px-3.5 py-1.5 rounded-full font-label-sm text-label-sm transition-all bg-[#17171C] text-on-surface-variant hover:text-on-surface border border-[#2A2A32] hover:bg-[#2A2A32]" data-cuisine="Continental &amp; Cafe" type="button">Continental &amp; Cafe</button>
+<button class="cuisine-pill px-3.5 py-1.5 rounded-full font-label-sm text-label-sm transition-all bg-[#17171C] text-on-surface-variant hover:text-on-surface border border-[#2A2A32] hover:bg-[#2A2A32]" data-cuisine="Pan-Asian" type="button">Pan-Asian</button>
+<button class="cuisine-pill px-3.5 py-1.5 rounded-full font-label-sm text-label-sm transition-all bg-[#17171C] text-on-surface-variant hover:text-on-surface border border-[#2A2A32] hover:bg-[#2A2A32]" data-cuisine="Biryani &amp; Kebabs" type="button">Biryani &amp; Kebabs</button>
+<button class="cuisine-pill px-3.5 py-1.5 rounded-full font-label-sm text-label-sm transition-all bg-[#17171C] text-on-surface-variant hover:text-on-surface border border-[#2A2A32] hover:bg-[#2A2A32]" data-cuisine="Microbrewery" type="button">Microbrewery</button>
+</div>
+</div>
+</div>
+<!-- Section 3: Precision & Criteria -->
+<div class="space-y-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">tune</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Precision &amp; Criteria</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="space-y-2 bg-[#1F1F26] p-4 rounded-xl border border-[#2A2A32]">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1.5" for="ratingSlider">
+<span class="material-symbols-outlined text-[18px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>Minimum Rating
+              </label>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#17171C] text-secondary font-label-sm text-label-sm border border-secondary/30 shadow-[0_0_8px_rgba(255,185,87,0.2)]" id="ratingDisplayValue">3.5 ★ &amp; above</span>
+</div>
+<div class="py-1">
+<input class="w-full h-1.5 bg-[#2A2A32] rounded-lg appearance-none cursor-pointer accent-[#E23744]" id="ratingSlider" max="5" min="0" step="0.5" type="range" value="3.5"/>
+</div>
+<div class="flex justify-between font-caption text-caption text-on-surface-variant px-0.5">
+<span class="text-[11px]">Any (0.0)</span><span class="text-[11px]">Popular (3.5)</span><span class="text-[11px]">Elite (4.5+)</span>
+</div>
+</div>
+<div class="space-y-2 bg-[#1F1F26] p-4 rounded-xl border border-[#2A2A32]">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1.5" for="batchSlider">
+<span class="material-symbols-outlined text-[18px] text-tertiary">filter_list</span>Batch Size
+              </label>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#17171C] text-on-surface font-label-sm text-label-sm border border-[#2A2A32]" id="batchDisplayValue">5 recommendations</span>
+</div>
+<div class="py-1">
+<input class="w-full h-1.5 bg-[#2A2A32] rounded-lg appearance-none cursor-pointer accent-[#E23744]" id="batchSlider" max="10" min="3" step="1" type="range" value="5"/>
+</div>
+<div class="flex justify-between font-caption text-caption text-on-surface-variant px-0.5">
+<span class="text-[11px]">3 picks</span><span class="text-[11px]">Balanced (5)</span><span class="text-[11px]">10 deep dive</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 4: Ambience & Extra Preferences -->
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<label class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-1.5" for="modalPromptInput">
+<span class="material-symbols-outlined text-[18px] text-primary">psychology</span>Ambience &amp; Extra Preferences
+            </label>
+</div>
+<span class="font-caption text-caption text-outline" id="charCountDisplay">32/120</span>
+</div>
+<div class="bg-[#1F1F26] p-4 rounded-xl border border-[#2A2A32] space-y-3">
+<div class="relative">
+<input class="w-full bg-[#17171C] rounded-xl px-4 py-2.5 text-on-surface font-body-md text-body-md border border-[#2A2A32] focus:border-primary/60 outline-none transition-all shadow-sm" id="modalPromptInput" maxlength="120" type="text" value="Date night &amp; outdoor seating"/>
+</div>
+<div class="flex flex-wrap gap-1.5" id="ambienceTagsGroup">
+<button class="ambience-tag px-2.5 py-1 rounded-lg bg-primary-container/20 text-primary border border-primary-container/40 font-caption text-caption transition-colors flex items-center gap-1" data-text="Date night" type="button">
+<span class="material-symbols-outlined text-[13px]">check</span>Date night
+            </button>
+<button class="ambience-tag px-2.5 py-1 rounded-lg bg-primary-container/20 text-primary border border-primary-container/40 font-caption text-caption transition-colors flex items-center gap-1" data-text="Outdoor garden seating" type="button">
+<span class="material-symbols-outlined text-[13px]">check</span>Outdoor garden seating
+            </button>
+<button class="ambience-tag px-2.5 py-1 rounded-lg bg-[#17171C] text-on-surface-variant hover:text-on-surface hover:bg-[#2A2A32] font-caption text-caption transition-colors border border-[#2A2A32]" data-text="Family-friendly" type="button">
+              + Family-friendly
+            </button>
+<button class="ambience-tag px-2.5 py-1 rounded-lg bg-[#17171C] text-on-surface-variant hover:text-on-surface hover:bg-[#2A2A32] font-caption text-caption transition-colors border border-[#2A2A32]" data-text="Craft Beer &amp; Rooftop" type="button">
+              + Craft Beer &amp; Rooftop
+            </button>
+<button class="ambience-tag px-2.5 py-1 rounded-lg bg-[#17171C] text-on-surface-variant hover:text-on-surface hover:bg-[#2A2A32] font-caption text-caption transition-colors border border-[#2A2A32]" data-text="Quick bite" type="button">
+              + Quick bite
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Fixed Modal Footer -->
+<div class="border-t border-[#2A2A32] bg-[#131316]/95 backdrop-blur px-6 py-4 flex items-center justify-between gap-4 shrink-0">
+<button class="text-xs text-[#A1A1AA] hover:text-[#F4F4F6] underline underline-offset-4 flex items-center gap-1.5 transition-colors" id="resetDefaultsBtn" type="button">
+<span class="material-symbols-outlined text-[14px]">restart_alt</span>Reset to Defaults
+      </button>
+<div class="flex items-center gap-3">
+<button class="px-5 py-2.5 rounded-xl border border-[#2A2A32] text-sm font-medium text-[#A1A1AA] hover:text-[#F4F4F6] hover:bg-[#1F1F26] transition-colors" id="cancelModalBtn" type="button">
+          Cancel
+        </button>
+<button class="px-6 py-2.5 rounded-xl bg-[#E23744] hover:bg-[#d02e3b] text-white text-sm font-semibold shadow-lg shadow-[#E23744]/20 flex items-center gap-2 transition-all hover:scale-[1.02] active:scale-[0.98]" id="applyChangesBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">check</span>Apply Changes
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const modal = document.getElementById('preferencesModalOverlay');
+    const modalDialog = document.getElementById('modalDialogCard');
+    const openBtn = document.getElementById('openPreferencesBtn');
+    const closeBtn = document.getElementById('closeModalBtn');
+    const cancelBtn = document.getElementById('cancelModalBtn');
+    const applyBtn = document.getElementById('applyChangesBtn');
+    const resetBtn = document.getElementById('resetDefaultsBtn');
+
+    // Filter Chips on screen
+    const locationChipText = document.getElementById('locationChipText');
+    const budgetChipText = document.getElementById('budgetChipText');
+    const cuisineChipText = document.getElementById('cuisineChipText');
+    const ratingChipText = document.getElementById('ratingChipText');
+    const ambienceChipText = document.getElementById('ambienceChipText');
+    const ambienceTagWrapper = document.getElementById('ambienceTagWrapper');
+
+    // Controls inside modal
+    const locationSelect = document.getElementById('modalLocationSelect');
+    const promptInput = document.getElementById('modalPromptInput');
+    const charCountDisplay = document.getElementById('charCountDisplay');
+    const ratingSlider = document.getElementById('ratingSlider');
+    const ratingDisplayValue = document.getElementById('ratingDisplayValue');
+    const batchSlider = document.getElementById('batchSlider');
+    const batchDisplayValue = document.getElementById('batchDisplayValue');
+    const activeBudgetBadge = document.getElementById('activeBudgetBadge');
+    const budgetButtons = document.querySelectorAll('.budget-btn');
+    const cuisinePills = document.querySelectorAll('.cuisine-pill');
+    const ambienceTags = document.querySelectorAll('.ambience-tag');
+
+    let currentBudget = 'Medium ₹500 - ₹1,000';
+    let currentBudgetChipLabel = 'Budget: ₹500–₹1,000';
+    let currentCuisine = 'Any Cuisine';
+
+    function openModal() {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+
+    // Close on backdrop click outside the dialog card
+    modal.addEventListener('click', function(e) {
+      if (!modalDialog.contains(e.target)) {
+        closeModal();
+      }
+    });
+
+    // Escape key closes modal
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+
+    // Budget segmented selection
+    budgetButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        budgetButtons.forEach(b => {
+          b.className = 'budget-btn py-1 px-1.5 rounded-lg text-center flex flex-col items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-[#2A2A32] transition-all';
+          // Remove checkmark icon if present
+          const check = b.querySelector('.material-symbols-outlined');
+          if (check) check.remove();
+        });
+        btn.className = 'budget-btn py-1 px-1.5 rounded-lg text-center flex flex-col items-center justify-center bg-[#E23744] text-white shadow-[0_0_12px_rgba(226,55,68,0.4)] transition-all';
+        const labelDiv = btn.firstElementChild;
+        if (labelDiv && !labelDiv.querySelector('.material-symbols-outlined')) {
+          labelDiv.innerHTML = `<span class="font-label-sm text-[11px] font-semibold leading-tight">${labelDiv.innerText.trim()}</span><span class="material-symbols-outlined text-[12px] ml-1">check</span>`;
+        }
+        currentBudget = btn.getAttribute('data-budget');
+        currentBudgetChipLabel = btn.getAttribute('data-label') || ('Budget: ' + currentBudget);
+        activeBudgetBadge.textContent = currentBudget.replace(/Low |Medium |High /g, '');
+      });
+    });
+
+    // Cuisine Pills selection
+    cuisinePills.forEach(pill => {
+      pill.addEventListener('click', function() {
+        cuisinePills.forEach(p => {
+          p.className = 'cuisine-pill px-3.5 py-1.5 rounded-full font-label-sm text-label-sm transition-all bg-[#17171C] text-on-surface-variant hover:text-on-surface border border-[#2A2A32] hover:bg-[#2A2A32]';
+        });
+        pill.className = 'cuisine-pill px-3.5 py-1.5 rounded-full font-label-sm text-label-sm transition-all bg-[#E23744] text-white shadow-[0_0_10px_rgba(226,55,68,0.35)]';
+        currentCuisine = pill.getAttribute('data-cuisine') || pill.textContent.trim();
+      });
+    });
+
+    // Sliders live feedback
+    if (ratingSlider) {
+      ratingSlider.addEventListener('input', function() {
+        const val = parseFloat(this.value);
+        ratingDisplayValue.textContent = val === 0 ? 'Any Rating' : `${val.toFixed(1)} ★ & above`;
+      });
+    }
+
+    if (batchSlider) {
+      batchSlider.addEventListener('input', function() {
+        batchDisplayValue.textContent = `${this.value} recommendations`;
+      });
+    }
+
+    // Input character count
+    if (promptInput && charCountDisplay) {
+      promptInput.addEventListener('input', function() {
+        charCountDisplay.textContent = `${this.value.length}/120`;
+      });
+    }
+
+    // Quick tag insertion to text input
+    ambienceTags.forEach(tag => {
+      tag.addEventListener('click', function() {
+        const tagText = tag.getAttribute('data-text') || tag.innerText.replace('+', '').trim();
+        if (promptInput.value.includes(tagText)) {
+          // already present
+        } else {
+          promptInput.value = promptInput.value ? (promptInput.value.trim() + ' & ' + tagText) : tagText;
+          if (promptInput.value.length > 120) {
+            promptInput.value = promptInput.value.slice(0, 120);
+          }
+          charCountDisplay.textContent = `${promptInput.value.length}/120`;
+        }
+      });
+    });
+
+    // Reset Defaults
+    if (resetBtn) {
+      resetBtn.addEventListener('click', function() {
+        locationSelect.value = 'Indiranagar, 100ft Rd';
+        promptInput.value = 'Date night & outdoor seating';
+        charCountDisplay.textContent = '32/120';
+        ratingSlider.value = 3.5;
+        ratingDisplayValue.textContent = '3.5 ★ & above';
+        batchSlider.value = 5;
+        batchDisplayValue.textContent = '5 recommendations';
+        
+        // Reset budget to medium
+        budgetButtons[1].click();
+        // Reset cuisine to Any
+        cuisinePills[0].click();
+      });
+    }
+
+    // Apply Changes handler
+    if (applyBtn) {
+      applyBtn.addEventListener('click', function() {
+        const originalContent = applyBtn.innerHTML;
+        applyBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Updating...';
+        applyBtn.disabled = true;
+
+        setTimeout(() => {
+          // Update filter chips in recommendations UI
+          if (locationChipText && locationSelect) {
+            locationChipText.textContent = locationSelect.value;
+          }
+          if (budgetChipText) {
+            budgetChipText.textContent = currentBudgetChipLabel;
+          }
+          if (cuisineChipText) {
+            cuisineChipText.textContent = `Cuisine: ${currentCuisine}`;
+          }
+          if (ratingChipText && ratingSlider) {
+            const rVal = parseFloat(ratingSlider.value);
+            ratingChipText.textContent = rVal === 0 ? 'Any Rating' : `${rVal.toFixed(1)}+ Rating`;
+          }
+          if (ambienceChipText && promptInput) {
+            if (promptInput.value.trim()) {
+              ambienceChipText.textContent = promptInput.value.trim();
+              ambienceTagWrapper.style.display = 'inline-flex';
+            } else {
+              ambienceTagWrapper.style.display = 'none';
+            }
+          }
+
+          // Subtle refresh flash on restaurant cards
+          const cardsContainer = document.getElementById('cardsContainer');
+          if (cardsContainer) {
+            cardsContainer.classList.add('opacity-40');
+            setTimeout(() => {
+              cardsContainer.classList.remove('opacity-40');
+            }, 180);
+          }
+
+          applyBtn.innerHTML = originalContent;
+          applyBtn.disabled = false;
+          closeModal();
+        }, 320);
+      });
+    }
+
+    // Ambience chip cross button
+    const removeAmbienceBtn = document.getElementById('removeAmbienceBtn');
+    if (removeAmbienceBtn && ambienceTagWrapper) {
+      removeAmbienceBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        ambienceTagWrapper.style.display = 'none';
+      });
+    }
+  })();
+</script>
+</body></html>

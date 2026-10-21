@@ -1,0 +1,10 @@
+# Runtime dependencies for the API (Railway installs this file).
+datasets>=2.19        # only used to rebuild the processed parquet; the committed parquet is used when present
+pandas>=2.2
+pyarrow>=15.0
+pydantic>=2.6
+groq>=0.11
+python-dotenv>=1.0
+fastapi>=0.110
+uvicorn[standard]>=0.29
+slowapi>=0.1.9

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "dataset": "ManikaSaini/zomato-restaurant-recommendation",
+  "budget_thresholds": {
+    "low_max": 300,
+    "medium_max": 500
+  },
+  "raw_rows": 51717,
+  "after_drop_unusable": 51618,
+  "restaurants": 12438
+}

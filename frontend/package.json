@@ -1,0 +1,13 @@
+{
+  "name": "restaurant-recommender-frontend",
+  "private": true,
+  "description": "Frontend build. `npm run build` -> ../assets/app.css (Streamlit). `npm run build:web` -> dist/ (static site for Vercel).",
+  "scripts": {
+    "build": "tailwindcss -c tailwind.config.js -i src/input.css -o ../assets/app.css --minify",
+    "build:web": "node scripts/build-web.mjs",
+    "serve:web": "node scripts/serve-web.mjs"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
